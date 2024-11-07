@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speaker Carousel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">View our Featured Speakers for the Event</h1>
+    <h3 class="header__subtitle">
+      Speakers are core contributors and industry thought leaders working at <span style="color:#003FB4;">companies</span> that push for
+      innovation.
+    </h3>
+  </header>
+
+  <section class="custom-container" id="custom-container">
+    <div class="custom-container__header">
+      <button class="custom-container__close-btn" onclick="closeCustomContainer()">X</button>
+    </div>
+    <div class="custom-container__details">
+      <div class="custom-container__image">
+        <img src="" alt="photo" id="custom-img" />
+      </div>
+      <div class="custom-container__extd">
+        <p class="custom-container__title" id="custom-name"></p>
+        <p class="custom-container__subtitle" id="custom-title"></p>
+        <p class="custom-container__ext" id="custom-company"></p>
+        <div class="custom-container__vectors">
+          <img src="./images/Vector.png" alt="" class="custom-container__vector" />
+          <img src="./images/Vector (1).png" alt="" class="custom-container__vector" />
+          <img src="./images/Vector (2).png" alt="" class="custom-container__vector" />
+        </div>
+      </div>
+      <div class="custom-container__vertical"></div>
+      <div class="content">
+        <p>
+          Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash
+          cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel
+          infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme
+          areas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+    <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous slide"
+      onclick="handleCarouselMove(false)">
+      &#8249;
+    </button>
+    <div class="carousel" id="carousel"></div>
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Next slide" onclick="handleCarouselMove()">
+      &#8250;
+    </button>
+  </main>
+
+  <button class="last">See the Program</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
