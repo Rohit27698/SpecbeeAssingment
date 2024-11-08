@@ -17,7 +17,7 @@ const generateCards =() =>{
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-      <img src="${data.image}" alt="photo" />
+      <img src="${data.image}" alt=${data.name}/>
       <p class="card__title">${data.name}</p>
       <p class="card__subtitle">${data.title}</p>
       <p class="card__ext">${data.company}</p>
@@ -39,6 +39,7 @@ const openCustomContainer=(data)=> {
   const customCompany = document.getElementById("custom-company");
 
   customImg.src = data.image;
+  customImg.alt = data.name;
   customName.textContent = data.name;
   customTitle.textContent = data.title;
   customCompany.textContent = data.company;
