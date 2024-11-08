@@ -12,7 +12,7 @@ const cardData = [
   { name: "Eva Gray", title: "HR Manager", company: "FutureWorks", image: "./images/img2.jpeg" }
 ];
 
-function generateCards() {
+const generateCards =() =>{
   cardData.forEach(data => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -27,12 +27,12 @@ function generateCards() {
   });
 }
 
-function handleCarouselMove(positive = true) {
+const handleCarouselMove =(positive = true) =>{
   const slideWidth = carousel.querySelector(".card").clientWidth + 16;
   carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
 }
 
-function openCustomContainer(data) {
+const openCustomContainer=(data)=> {
   const customImg = document.getElementById("custom-img");
   const customName = document.getElementById("custom-name");
   const customTitle = document.getElementById("custom-title");
@@ -46,7 +46,7 @@ function openCustomContainer(data) {
   customContainer.style.display = "block";
 }
 
-function closeCustomContainer() {
+const closeCustomContainer=()=> {
   customContainer.style.display = "none";
 }
 
