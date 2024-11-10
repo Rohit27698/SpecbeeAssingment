@@ -40,3 +40,45 @@ Specbee is a web-based interface showcasing featured speakers for an event. It i
    ```bash
    git clone https://github.com/your-username/Specbee-featured-speakers.git
    cd Specbee-featured-speakers
+
+   Install dependencies Since this project uses only vanilla HTML, CSS, and JavaScript, no additional dependencies are needed. However, you may need a live server for local development.
+
+Open the project Open index.html in your browser or use a live server.
+
+Usage
+Carousel Navigation: Use the left (<) and right (>) arrows to navigate through speaker cards.
+View Speaker Details: Click on any speaker card to open a detailed view in a pop-up window.
+Close Pop-Up: Click the "X" button in the pop-up to close it and return to the carousel.
+Project Structure
+plaintext
+Copy code
+├── images                   # Images for speaker profiles and icons
+├── index.html               # Main HTML file
+├── sass
+│   └── styles.scss          # Sass styles for the project
+├── index.js                 # JavaScript for dynamic carousel and pop-up behavior
+└── README.md                # Project documentation
+Customization
+To adjust the content or styles:
+
+Add or Modify Speaker Data: In index.js, modify the cardData array to add new speakers or update existing ones.
+
+javascript
+Copy code
+const cardData = [
+  { name: "Eva Gray", title: "HR Manager", company: "FutureWorks", image: "./images/img2.jpeg" },
+  ...
+];
+Styling Adjustments: Modify the styles.scss file for any custom styling adjustments, including colors, fonts, or layout changes.
+
+Carousel Transition Speed: Adjust the handleCarouselMove function in index.js for smoother or faster transitions by changing the scroll distance or speed.
+
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a Pull Request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
