@@ -1,8 +1,8 @@
-# Spacebee - Featured Speakers Carousel
+# Specbee - Featured Speakers Carousel
 
 ## Overview
 
-Spacebee is a web-based interface showcasing featured speakers for an event. It includes a carousel display for speaker cards, and a detailed popup view that appears when a speaker is selected. The project is designed with flexibility and responsiveness in mind, providing an intuitive user experience across various screen sizes.
+Specbee is a web-based interface showcasing featured speakers for an event. It includes a carousel display for speaker cards, and a detailed popup view that appears when a speaker is selected. The project is designed with flexibility and responsiveness in mind, providing an intuitive user experience across various screen sizes.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -38,5 +38,5 @@ Spacebee is a web-based interface showcasing featured speakers for an event. It 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/spacebee-featured-speakers.git
-   cd spacebee-featured-speakers
+   git clone https://github.com/your-username/Specbee-featured-speakers.git
+   cd Specbee-featured-speakers
