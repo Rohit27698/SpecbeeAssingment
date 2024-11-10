@@ -166,6 +166,9 @@ img {
   position: relative;
   background-color: white;
 }
+.custom-container .details_flex {
+  display: flex;
+}
 .custom-container__header {
   display: flex;
   justify-content: flex-end;
@@ -313,5 +316,27 @@ img {
     font-size: 0.9rem;
     padding: 12px 0;
     max-width: 200px;
+  }
+}
+
+@media (max-width: 720px) {
+  .custom-container {
+    width: 80%;
+    padding: 5px 25px 25px 25px;
+    border-radius: 10px;
+  }
+  .custom-container .custom-container__details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0%;
+  }
+  .custom-container .content {
+    font-size: 0.9rem;
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
